@@ -1,18 +1,14 @@
-import { AppContainer, ColumnContainer, ColumnTitle, CardContainer } from "./styles"
+import { AppContainer} from "./styles"
+import { Column } from "./Column"
+import { Card } from "./Card"
 
 
 export const App = () => {
   return (
     <AppContainer>
-      <ColumnContainer>
-        ColumnContainer
-        <ColumnTitle>
-          ColumnTitle
-        </ColumnTitle>
-        <CardContainer>
-          CardContainer
-        </CardContainer>
-      </ColumnContainer>
+      <Column text='Title'>
+        <Card text="Card content"></Card>
+      </Column>
       Columns will go here
     </AppContainer>
   )
