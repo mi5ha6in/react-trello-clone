@@ -30,12 +30,12 @@ const appData: AppState = {
     {
       id: "1",
       text: "In Progress",
-      tasks: [{ id: "c2", text: "Learn Typescript" }]
+      tasks: [{ id: "c1", text: "Learn Typescript" }]
     },
     {
       id: "2",
       text: "Done",
-      tasks: [{ id: "c3", text: "Begin to use static typing" }]
+      tasks: [{ id: "c2", text: "Begin to use static typing" }]
     }
   ]
 }
