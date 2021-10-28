@@ -17,3 +17,13 @@ export const addTask = (text: string, listId: string,): Action => ({
 })
 
 export const addList = (text: string): Action => ({ type: "ADD_LIST", pyload: text })
+
+export const moveList = (draggedId: string, hoverId: string): Action => (
+  {
+    type: "MOVE_LIST",
+    payload: {
+      draggedId,
+      hoverId
+    }
+  }
+)
