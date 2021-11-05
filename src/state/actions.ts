@@ -3,7 +3,7 @@ import { DragItem } from "../DragItem"
 export type Action =
   | {
     type: "ADD_LIST"
-    pyload: string
+    payload: string
   }
   | {
     type: "ADD_TASK"

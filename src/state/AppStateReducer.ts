@@ -24,7 +24,7 @@ export const appStateReducer = (draft: AppState, action: Action): AppState | voi
     case "ADD_LIST": {
       draft.lists.push({
         id: nanoid(),
-        text: action.pyload,
+        text: action.payload,
         tasks: []
       })
       break
