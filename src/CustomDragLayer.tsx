@@ -1,9 +1,9 @@
-import { useDragLayer, userDragLayer } from "react-dnd"
+import { useDragLayer } from "react-dnd"
 import { Column } from "./Column"
 import { CustomDragLayerContainer } from "./styles"
 import { useAppState } from "./state/AppStateContext"
 
-const CustomDragLayer = () => {
+export const CustomDragLayer = () => {
   const { draggedItem } = useAppState()
   const { currentOffset } = useDragLayer((monitor) => ({
     currentOffset: monitor.getSourceClientOffset()
