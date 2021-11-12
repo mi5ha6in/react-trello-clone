@@ -11,6 +11,7 @@ import { isHidden } from "./utils/isHidden"
 type ColumnProps = {
   text: string
   id: string
+  isPreview?: boolean
 }
 
 export const Column = ({ text, id }: ColumnProps) => {
